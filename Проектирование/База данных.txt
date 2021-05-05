@@ -1,0 +1,34 @@
+Проектирование базы данных для Интернет-магазина "Citadel"
+
+Таблици и их атрибуты:
+
+1. Admin
+- id (уникальный)
+- Login
+- Password
+
+2. User_Data
+- id (уникальный)
+- Name (обязательный)
+- Lastname
+- E-Mail (обязательный)
+- Phone
+- City
+- Age
+
+3. User_Account
+- id (уникальный)
+- Login
+- Password
+
+4. Product
+- id (уникальный)
+- Name
+- Description
+- Photo
+- Price
+- Category
+
+Связи таблиц:
+User_Datd - User_Account (1 к 1)
+User_Data - Product (n к n)
